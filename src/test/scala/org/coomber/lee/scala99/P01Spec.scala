@@ -14,5 +14,9 @@ object P01Spec extends Specification {
     "return the last element" in {
       ((_:List[Any] => Any)(testVals) mustEqual 8).forall(methods) 
     }
+
+    "throw exception if no elements" in {
+      ((_:List[Any] => Any)(Nil) must throwA[NoSuchElementException]).forall(methods) 
+    }
   }
 }
