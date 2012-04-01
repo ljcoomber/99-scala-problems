@@ -1,7 +1,10 @@
 package org.coomber.lee.scala99
 
 import org.specs2.mutable._
+import org.junit.runner.RunWith
+import org.specs2.runner.JUnitRunner
 
+@RunWith(classOf[JUnitRunner])
 object P01Spec extends Specification {
   "P01Spec" should {
     val testVals = List(1, 1, 2, 3, 5, 8)

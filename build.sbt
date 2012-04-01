@@ -12,7 +12,8 @@ resolvers ++= Seq("Sonatype Snapshots" at "http://oss.sonatype.org/content/repos
                   "Sonatype Releases" at "http://oss.sonatype.org/content/repositories/releases")
 
 libraryDependencies ++= Seq(
-  "org.specs2" %% "specs2" % "1.7.1" % "test"
+  "org.specs2" %% "specs2" % "1.7.1" % "test",
+  "junit" % "junit" % "4.10" % "test"
 )
 
 /** Compilation */
