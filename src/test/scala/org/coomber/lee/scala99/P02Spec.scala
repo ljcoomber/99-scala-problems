@@ -14,7 +14,7 @@ object P02Spec extends Specification {
                                         P02.penultimateLength _,
                                         P02.penultimateRecursive _)
 
-    "return the last element" in {
+    "return the penultimate element" in {
       ((_:List[Any] => Any)(testVals) mustEqual 5).forall(methods) 
     }
 
